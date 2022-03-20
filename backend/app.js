@@ -3,10 +3,8 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const app = express();
 const path = require('path');
-const http = require('http').createServer(app);
 const PORT = process.env.PORT || 9001;
 const db = require('./Database/connect');
-const router = require('./Routes');
 
 const NODE_ENV = process.env.NODE_ENV || 'production';
 
