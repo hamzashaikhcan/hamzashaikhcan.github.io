@@ -11,63 +11,63 @@ const TechStack = () => {
 								<div className='col-lg-4 col-md-4 col-sm-6'>
 									<div className='single-brand-item d-table'>
 										<div className='d-table-cell text-center'>
-											<img src='./assets/img/brands/logo1.png' alt='' />
+											<img src='./assets/img/brands/react.png' alt='' />
 										</div>
 									</div>
 								</div>
 								<div className='col-lg-4 col-md-4 col-sm-6'>
 									<div className='single-brand-item d-table'>
 										<div className='d-table-cell text-center'>
-											<img src='./assets/img/brands/logo2.png' alt='' />
+											<img src='./assets/img/brands/docker.png' alt='' />
 										</div>
 									</div>
 								</div>
 								<div className='col-lg-4 col-md-4 col-sm-6'>
 									<div className='single-brand-item d-table'>
 										<div className='d-table-cell text-center'>
-											<img src='./assets/img/brands/logo3.png' alt='' />
+											<img src='./assets/img/brands/kubernetes.png' alt='' />
 										</div>
 									</div>
 								</div>
 								<div className='col-lg-4 col-md-4 col-sm-6'>
 									<div className='single-brand-item d-table'>
 										<div className='d-table-cell text-center'>
-											<img src='./assets/img/brands/logo4.png' alt='' />
+											<img src='./assets/img/brands/flutter.png' alt='' />
 										</div>
 									</div>
 								</div>
 								<div className='col-lg-4 col-md-4 col-sm-6'>
 									<div className='single-brand-item d-table'>
 										<div className='d-table-cell text-center'>
-											<img src='./assets/img/brands/logo5.png' alt='' />
+											<img src='./assets/img/brands/python.png' alt='' />
 										</div>
 									</div>
 								</div>
 								<div className='col-lg-4 col-md-4 col-sm-6'>
 									<div className='single-brand-item d-table'>
 										<div className='d-table-cell text-center'>
-											<img src='./assets/img/brands/logo6.png' alt='' />
+											<img src='./assets/img/brands/node.png' alt='' />
 										</div>
 									</div>
 								</div>
 								<div className='col-lg-4 col-md-4 col-sm-6'>
 									<div className='single-brand-item d-table'>
 										<div className='d-table-cell text-center'>
-											<img src='./assets/img/brands/logo7.png' alt='' />
+											<img src='./assets/img/brands/laravel.png' alt='' />
 										</div>
 									</div>
 								</div>
 								<div className='col-lg-4 col-md-4 col-sm-6'>
 									<div className='single-brand-item d-table'>
 										<div className='d-table-cell text-center'>
-											<img src='./assets/img/brands/logo8.png' alt='' />
+											<img src='./assets/img/brands/android.png' alt='' />
 										</div>
 									</div>
 								</div>
 								<div className='col-lg-4 col-md-4 col-sm-6'>
 									<div className='single-brand-item d-table'>
 										<div className='d-table-cell text-center'>
-											<img src='./assets/img/brands/logo9.png' alt='' />
+											<img src='./assets/img/brands/git.png' alt='' />
 										</div>
 									</div>
 								</div>
