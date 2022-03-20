@@ -1,4 +1,5 @@
 import React from 'react';
+import { DOWNLOAD_URL } from '../../utils/BASE_URL';
 
 const Introduction = () => {
 	return (
@@ -32,7 +33,7 @@ const Introduction = () => {
 								</p>
 								<a
 									className='primary_btn'
-									href='https://hamzashaikhcan.herokuapp.com/assets/Resume - Hamza Zahid.pdf'
+									href={DOWNLOAD_URL + 'assets/Resume - Hamza Zahid.pdf'}
 									download
 									target='_blank'
 									rel='noreferrer'>

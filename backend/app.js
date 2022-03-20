@@ -24,6 +24,7 @@ app.use(
 
 const routes = require('./Routes/index');
 app.use('/api', routes);
+app.use('/downloads/', express.static(path.join(__dirname, 'assets')));
 
 if (NODE_ENV === 'production') {
 	app.use(express.static(path.join(__dirname, 'public/build')));

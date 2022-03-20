@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { DOWNLOAD_URL } from '../utils/BASE_URL';
 import Introduction from './PageComponents/Introduction';
 import Newsletter from './PageComponents/Newsletter';
 import OfferedServices from './PageComponents/OfferedServices';
@@ -27,7 +28,7 @@ const Home = () => {
 										</Link>
 										<a
 											className='primary_btn tr-bg'
-											href='https://hamzashaikhcan.herokuapp.com/assets/Resume - Hamza Zahid.pdf'
+											href={DOWNLOAD_URL + 'assets/Resume - Hamza Zahid.pdf'}
 											download
 											target='_blank'
 											rel='noreferrer'>

@@ -1,4 +1,5 @@
 const BASE_URL = 'https://hamzashaikhcan.herokuapp.com/api/';
+const DOWNLOAD_URL = 'https://hamzashaikhcan.herokuapp.com/';
 const endpoints = {
 	PORTFOLIO: {
 		ADD: {
@@ -12,4 +13,4 @@ const endpoints = {
 	},
 };
 
-export { BASE_URL, endpoints };
+export { BASE_URL, DOWNLOAD_URL, endpoints };
