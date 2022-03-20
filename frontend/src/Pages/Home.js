@@ -28,7 +28,7 @@ const Home = () => {
 										</Link>
 										<a
 											className='primary_btn tr-bg'
-											href={DOWNLOAD_URL + 'assets/Resume - Hamza Zahid.pdf'}
+											href={DOWNLOAD_URL + 'Resume - Hamza Zahid.pdf'}
 											download
 											target='_blank'
 											rel='noreferrer'>

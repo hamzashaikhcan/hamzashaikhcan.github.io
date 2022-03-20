@@ -1,5 +1,5 @@
 const BASE_URL = 'https://hamzashaikhcan.herokuapp.com/api/';
-const DOWNLOAD_URL = 'https://hamzashaikhcan.herokuapp.com/';
+const DOWNLOAD_URL = 'https://hamzashaikhcan.herokuapp.com/downloads/';
 const endpoints = {
 	PORTFOLIO: {
 		ADD: {
