@@ -32,7 +32,9 @@ const Footer = () => {
 					</div>
 				</div>
 				<div className='row footer_bottom justify-content-center'>
-					<p className='col-lg-8 col-sm-12 footer-text'>Copyright © 2022</p>
+					<p className='col-lg-8 col-sm-12 footer-text'>
+						Copyright © {new Date().getFullYear()}
+					</p>
 				</div>
 			</div>
 		</footer>
