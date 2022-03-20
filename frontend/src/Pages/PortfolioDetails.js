@@ -16,7 +16,7 @@ const PortfolioDetails = () => {
 				setData(res.data);
 			})
 			.catch((err) => {
-				alert(err);
+				console.log(err);
 			});
 	}, []);
 

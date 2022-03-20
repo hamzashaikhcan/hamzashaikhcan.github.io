@@ -1,0 +1,11 @@
+{
+	"name": "portfolio",
+	"version": "1.0.0",
+	"description": "Hamza Zahid - Portfolio",
+	"scripts": {
+		"heroku-prebuild": "cd backend/ && npm install"
+	},
+	"author": "Hamza Zahid",
+	"license": "ISC",
+	"dependencies": {}
+}

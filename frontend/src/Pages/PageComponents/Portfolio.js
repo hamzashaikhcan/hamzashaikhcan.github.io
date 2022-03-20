@@ -14,7 +14,7 @@ const Portfolio = () => {
 				setDate(res.data);
 			})
 			.catch((err) => {
-				alert(err);
+				console.log(err);
 			});
 	}, []);
 
