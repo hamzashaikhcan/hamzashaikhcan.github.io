@@ -9,9 +9,9 @@ const Header = () => {
 					<nav className='navbar navbar-expand-lg navbar-light'>
 						<div className='container'>
 							{/* Brand and toggle get grouped for better mobile display */}
-							<a className='navbar-brand logo_h' href='index.html'>
+							<Link className='navbar-brand logo_h' to='/'>
 								<img src='./assets/img/logo.png' alt='' />
-							</a>
+							</Link>
 							<button
 								className='navbar-toggler'
 								type='button'
