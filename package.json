@@ -3,7 +3,8 @@
 	"version": "1.0.0",
 	"description": "Hamza Zahid - Portfolio",
 	"scripts": {
-		"heroku-prebuild": "cd backend/ && npm install"
+		"heroku-prebuild": "cd backend/ && npm install",
+		"start": "cd backend/ && npm run start"
 	},
 	"author": "Hamza Zahid",
 	"license": "ISC",
