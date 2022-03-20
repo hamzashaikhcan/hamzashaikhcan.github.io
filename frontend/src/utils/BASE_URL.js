@@ -1,4 +1,4 @@
-const BASE_URL = 'http://hamzashaikhcan.herokuapp.com/api/';
+const BASE_URL = 'https://hamzashaikhcan.herokuapp.com/api/';
 const endpoints = {
 	PORTFOLIO: {
 		ADD: {

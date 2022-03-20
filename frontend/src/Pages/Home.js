@@ -25,7 +25,12 @@ const Home = () => {
 										<Link className='primary_btn' to='/contact'>
 											<span>Hire Me</span>
 										</Link>
-										<a className='primary_btn tr-bg' href='#'>
+										<a
+											className='primary_btn tr-bg'
+											href='https://hamzashaikhcan.herokuapp.com/assets/Resume - Hamza Zahid.pdf'
+											download
+											target='_blank'
+											rel='noreferrer'>
 											<span>Get CV</span>
 										</a>
 									</div>

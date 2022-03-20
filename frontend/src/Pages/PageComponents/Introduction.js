@@ -30,7 +30,12 @@ const Introduction = () => {
 									whales fruit unto meat the life beginning all in under give
 									two.
 								</p>
-								<a className='primary_btn' href='#'>
+								<a
+									className='primary_btn'
+									href='https://hamzashaikhcan.herokuapp.com/assets/Resume - Hamza Zahid.pdf'
+									download
+									target='_blank'
+									rel='noreferrer'>
 									<span>Download CV</span>
 								</a>
 							</div>
