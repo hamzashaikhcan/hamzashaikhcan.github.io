@@ -6,6 +6,7 @@ exports.up = function (knex) {
 			t.string('image');
 			t.string('tags');
 			t.string('link');
+			t.string('role');
 			t.string('completed_at');
 			t.string('description');
 			t.timestamp('created_at').defaultTo(knex.fn.now());

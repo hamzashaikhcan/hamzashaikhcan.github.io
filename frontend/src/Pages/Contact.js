@@ -1,7 +1,64 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { endpoints } from '../utils/BASE_URL';
+import axios from 'axios';
 
 const Contact = () => {
+	const [name, setName] = useState('');
+	const [email, setEmail] = useState('');
+	const [subject, setSubject] = useState('');
+	const [message, setMessage] = useState('');
+	const [error, setError] = useState('');
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		setError('');
+		console.log('Sending');
+		if (!isEmpty() && validateEmail(email)) {
+			const URL = endpoints.CONTACT.ADD.url;
+			// alert(URL);
+			const body = {
+				name: name,
+				email: email,
+				subject: subject,
+				message: message,
+			};
+			axios
+				.post(URL, body)
+				.then((resp) => {
+					setError('Thanks for contacting us!');
+					setName('');
+					setEmail('');
+					setSubject('');
+					setMessage('');
+				})
+				.catch((err) => {
+					setError('Something went wrong');
+				});
+		} else {
+			console.log('Please enter a valid email');
+		}
+	};
+
+	const onChange = (hook, e) => {
+		hook(e.target.value);
+	};
+
+	const validateEmail = (email) => {
+		const re =
+			/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		return re.test(String(email).toLowerCase());
+	};
+
+	const isEmpty = () => {
+		if (name === '' || email === '' || subject === '' || message === '') {
+			setError('All fields are required');
+			return true;
+		} else {
+			return false;
+		}
+	};
+
 	return (
 		<div>
 			<section className='banner_area'>
@@ -54,6 +111,8 @@ const Contact = () => {
 											className='form-control'
 											id='name'
 											name='name'
+											value={name}
+											onChange={onChange.bind(this, setName)}
 											placeholder='Enter your name'
 										/>
 									</div>
@@ -63,6 +122,8 @@ const Contact = () => {
 											className='form-control'
 											id='email'
 											name='email'
+											value={email}
+											onChange={onChange.bind(this, setEmail)}
 											placeholder='Enter email address'
 										/>
 									</div>
@@ -72,6 +133,8 @@ const Contact = () => {
 											className='form-control'
 											id='subject'
 											name='subject'
+											value={subject}
+											onChange={onChange.bind(this, setSubject)}
 											placeholder='Enter Subject'
 										/>
 									</div>
@@ -82,6 +145,8 @@ const Contact = () => {
 											className='form-control'
 											name='message'
 											id='message'
+											value={message}
+											onChange={onChange.bind(this, setMessage)}
 											rows={1}
 											placeholder='Enter Message'
 											defaultValue={''}
@@ -89,10 +154,15 @@ const Contact = () => {
 									</div>
 								</div>
 								<div className='col-md-12 text-right'>
-									<button type='button' value='submit' className='primary_btn'>
+									<button
+										type='button'
+										value='button'
+										onClick={handleSubmit.bind(this)}
+										className='primary_btn'>
 										<span>Send Message</span>
 									</button>
 								</div>
+								{error}
 							</form>
 						</div>
 					</div>

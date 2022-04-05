@@ -55,10 +55,16 @@ const PortfolioDetails = () => {
 
 									<ul className='list'>
 										<li>
-											<span>Website</span>: {data.link}
+											<span>Website</span>:{' '}
+											<a href={data.link} target='_blank' rel='noreferrer'>
+												{data.link}
+											</a>
 										</li>
 										<li>
 											<span>Completed</span>: {data.completed_at}
+										</li>
+										<li>
+											<span>My Role</span>: {data.role}
 										</li>
 										<li>
 											<span>Tags</span>: {data.tags}
@@ -67,6 +73,7 @@ const PortfolioDetails = () => {
 								</div>
 							</div>
 						</div>
+						<h3>Description</h3>
 						<p>{data.description}</p>
 					</div>
 				</div>

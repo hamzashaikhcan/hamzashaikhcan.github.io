@@ -23,10 +23,10 @@ const OfferedServices = () => {
 									style={{ width: width, height: height }}
 								/>
 								<h4>Web App Development</h4>
-								<p>
+								{/* <p>
 									Creeping for female light years that lesser can't evening
 									heaven isn't bearing tree
-								</p>
+								</p> */}
 							</div>
 						</div>
 						<div className='col-lg-3 col-md-6'>
@@ -37,10 +37,10 @@ const OfferedServices = () => {
 									style={{ width: width, height: height }}
 								/>
 								<h4>UI/UX design</h4>
-								<p>
+								{/* <p>
 									Creeping for female light years that lesser can't evening
 									heaven isn't bearing tree
-								</p>
+								</p> */}
 							</div>
 						</div>
 						<div className='col-lg-3 col-md-6'>
@@ -51,10 +51,10 @@ const OfferedServices = () => {
 									style={{ width: width, height: height }}
 								/>
 								<h4>Cloud App Development</h4>
-								<p>
+								{/* <p>
 									Creeping for female light years that lesser can't evening
 									heaven isn't bearing tree
-								</p>
+								</p> */}
 							</div>
 						</div>
 						<div className='col-lg-3 col-md-6'>
@@ -65,10 +65,10 @@ const OfferedServices = () => {
 									style={{ width: width, height: height }}
 								/>
 								<h4>Mobile App Development</h4>
-								<p>
+								{/* <p>
 									Creeping for female light years that lesser can't evening
 									heaven isn't bearing tree
-								</p>
+								</p> */}
 							</div>
 						</div>
 					</div>

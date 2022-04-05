@@ -27,7 +27,7 @@ const Portfolio = () => {
 							<div className='main_title text-left'>
 								<h2>
 									quality work <br />
-									Recently done project
+									Some recent projects
 								</h2>
 							</div>
 						</div>
@@ -52,7 +52,7 @@ const Portfolio = () => {
 									</div>
 									<div className='short_info'>
 										<h4>
-											<a href='portfolio-details.html'>{item.title}</a>
+											<Link to={`/detail/${item.id}`}>{item.title}</Link>
 										</h4>
 										<p>{item.tags}</p>
 									</div>

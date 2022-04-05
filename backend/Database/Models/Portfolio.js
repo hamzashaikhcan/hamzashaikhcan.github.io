@@ -18,6 +18,7 @@ class Portfolio extends Model {
 				image: { type: 'string' },
 				tags: { type: 'string' },
 				link: { type: 'string' },
+				role: { type: 'string' },
 				completed_at: { type: 'string' },
 				description: { type: 'string' },
 			},

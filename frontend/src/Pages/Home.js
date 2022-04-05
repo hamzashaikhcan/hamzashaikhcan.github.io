@@ -54,7 +54,7 @@ const Home = () => {
 			<TechStack />
 			<OfferedServices />
 			<Portfolio />
-			<Testimonial />
+			{/* <Testimonial /> */}
 			<Newsletter />
 		</div>
 	);

@@ -2,22 +2,19 @@ const Objection = require('objection');
 const { Model } = require('objection');
 const path = require('path');
 
-class Portfolio extends Model {
+class Newsletter extends Model {
 	static get tableName() {
-		return 'contacts';
+		return 'newsletters';
 	}
 
 	static get jsonSchema() {
 		return {
 			type: 'object',
-			required: ['name', 'email', 'subject', 'message'],
+			required: ['email'],
 
 			properties: {
 				id: { type: 'integer' },
-				name: { type: 'string' },
 				email: { type: 'string' },
-				subject: { type: 'string' },
-				message: { type: 'string' },
 			},
 		};
 	}
@@ -31,4 +28,4 @@ class Portfolio extends Model {
 	}
 }
 
-module.exports = Portfolio;
+module.exports = Newsletter;
